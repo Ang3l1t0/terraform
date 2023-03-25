@@ -15,11 +15,11 @@ variable "aws_region" {
   description = "AWS Region"
 }
 
-variable "aws_cloudwatch_retention_in_days" {
-  type        = number
-  description = "AWS CloudWatch Logs Retention in Days"
-  default     = 1
-}
+#variable "aws_cloudwatch_retention_in_days" {
+#  type        = number
+#  description = "AWS CloudWatch Logs Retention in Days"
+#  default     = 1
+#}
 
 variable "app_name" {
   type        = string
