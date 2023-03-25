@@ -1,0 +1,34 @@
+[
+    {
+        "essential": true,
+        "memory": 512,
+        "name": "fullstack-labs-production-container",
+        "cpu": 1,
+        "image": "319455510889.dkr.ecr.us-east-1.amazonaws.com/fullstack-labs-production-ecr:latest",
+        "environment": [],
+        "portMappings": [
+            {
+                "containerPort": 80,
+                "hostPort": 80,
+                "protocol": "tcp"
+            }
+        ],
+        "compatibilities": [
+            "EXTERNAL",
+            "EC2"
+        ],
+        "requiresCompatibilities": [
+            "EC2"
+        ],
+        "tags": [
+            {
+                "key": "Environment",
+                "value": "production"
+            },
+            {
+                "key": "Name",
+                "value": "fullstack-labs-ecs-td"
+            }
+        ]
+    }
+]
